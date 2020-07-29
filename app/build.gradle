@@ -7,9 +7,9 @@ android {
     defaultConfig {
         applicationId "com.trance.appkiller"
         minSdkVersion 26
-        targetSdkVersion 30
+        targetSdkVersion 28
         versionCode 1
-        versionName "1.1"
+        versionName "1.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
