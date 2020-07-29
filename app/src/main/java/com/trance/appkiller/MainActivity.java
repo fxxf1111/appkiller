@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         for (PackageInfo packageInfo : packages) {
             // 判断系统/非系统应用
             if ((packageInfo.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0){
-                if (packageInfo.packageName.contains("launcher")||packageInfo.packageName.contains("SMS")||packageInfo.packageName.contains("clock")||packageInfo.packageName.contains("trime")||packageInfo.packageName.contains("tencent.mm")||packageInfo.packageName.contains("appkiller")||packageInfo.packageName.contains("tts")){
+                if (packageInfo.packageName.contains("launcher")||packageInfo.packageName.contains("SMS")||packageInfo.packageName.contains("clock")||packageInfo.packageName.contains("trime")||packageInfo.packageName.contains("tencent.mm")||packageInfo.packageName.contains("appkiller")||packageInfo.packageName.contains("tts")||packageInfo.packageName.contains("calendar")||packageInfo.packageName.contains("weather")){
                     continue;
                 }
                 List<String> result = eu.chainfire.libsuperuser.Shell.SU.run("am force-stop " + packageInfo.packageName.toLowerCase());
